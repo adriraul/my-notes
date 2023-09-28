@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #C4F2AE;
+    /* Fondo azul muy oscuro */
+    color: #fff;
+    /* Texto en color blanco */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.notelist-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.noteform-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+  
+  .note-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Ajustar el ancho del formulario según tus necesidades */
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #758C64;
+    border-radius: 5px;
+  }
+
+main {
+    flex: 1;
+    /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra verticalmente los elementos del main */
+    justify-content: center;
+    /* Centra horizontalmente los elementos del main */
+    padding-top: 0px;
+}
+
+header {
+    background-color: #758C64;
+    /* Amarillo oscuro para el header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* Alinear el contenido horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente el contenido del header */
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    /* Centrar el título horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente el título */
+    flex: 1;
+    /* El título ocupará el espacio restante entre la imagen y el logo */
+}
+
+.header-title h1 {
+    margin: 0;
+    /* Eliminar el margen predeterminado del título */
+}
+
+/* Estilos para las imágenes */
+.logo,
+.left-image {
+    max-height: 100%;
+    /* La imagen ocupará el 100% del alto del header */
+    max-width: 55px;
+    /* Ancho máximo del logo e imagen a la izquierda */
+    object-fit: contain;
+    /* La imagen se ajustará manteniendo la relación de aspecto */
+    border-radius: 50%;
+    /* Redondea la imagen al 50% del ancho/alto */
+    overflow: hidden;
+    /* Oculta cualquier contenido que pueda sobresalir del radio */
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre los botones */
+    width: 80%;
+    /* Ancho del contenedor de los botones */
+    max-width: 400px;
+    /* Ancho máximo del contenedor de los botones */
+    margin-top: 20px;
+    /* Espacio superior entre los botones y el contenido principal */
+}
+
+button {
+    background-color: #758C64;
+    /* Amarillo oscuro para los botones */
+    color: #fff;
+    /* Texto en color blanco */
+    padding: 15px 30px;
+    /* Tamaño de los botones */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+    /* Hace que los botones ocupen el espacio disponible en el contenedor */
+    margin: 5px;
+    font-size: 30px;
+    /* Tamaño del texto en los botones */
+    width: auto;
+    /* Ancho automático para ajustar el contenido del botón */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+}
+
+.create-note-button {
+    font-size: 18px;
+    padding: 8px 12px; /* Ajustar el tamaño del botón */
+    margin-right: 10px; /* Espacio entre el botón y los "post-it" */
+    align-self: flex-start;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+  }
+
+.save-note-button {
+    font-size: 18px;
+    padding: 8px 12px; /* Ajustar el tamaño del botón */
+    margin-right: 10px; /* Espacio entre el botón y los "post-it" */
+}
+
+button:hover {
+    background-color: #BAD6A5;
+    /* Color de hover para los botones */
+}
+
+footer {
+    background-color: #758C64;
+    /* Amarillo oscuro para el footer */
+    padding: 10px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.footer-left {
+    flex: 1;
+    /* Parte izquierda del footer, estará vacía */
+}
+
+.footer-center {
+    flex: 1;
+    /* Parte central del footer, contendrá "Adrián Bravo" */
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    /* Parte derecha del footer, contendrá "Versión 1.0" */
+    text-align: right;
+}

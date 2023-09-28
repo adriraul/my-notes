@@ -1,0 +1,70 @@
+.note-item {
+    background-image: url('../assets/postit.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    width: 250px;
+    /* Ancho fijo del "post-it" */
+    height: 250px;
+    /* Altura fija del "post-it" */
+    margin: 10px;
+    /* Espacio entre los "post-it" */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.note-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.note-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 30px 20px 5px 20px;
+    /* Margen arriba, derecha, abajo, izquierda */
+}
+
+.note-description {
+    font-size: 16px;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+    margin: 0 20px;
+    /* Margen izquierda y derecha */
+}
+
+.buttons-container {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+    display: flex;
+    /* Alineamos los botones horizontalmente */
+  }
+  
+  .edit-button,
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+    /* Ajustamos el tamaño de los botones */
+  }
+
+  
+
+  .edit-button:hover,
+.delete-button:hover {
+  /* Estilos al pasar el ratón por encima del botón */
+  /* Cambiamos el color de fondo del botón */
+  box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+  /* Añadimos un sombreado al botón que ocupa solo el espacio del icono */
+}

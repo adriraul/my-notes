@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+package-lock.json
+yarn.lock
+
+# React
+/build
+/.cache
+
+# Editor
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.sublime-*
+.vscode/
+.idea/
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# PostgreSQL
+*.sql
+*.backup
+*.dump

@@ -5,11 +5,8 @@
     background-position: center;
     padding: 10px;
     width: 250px;
-    /* Ancho fijo del "post-it" */
     height: 250px;
-    /* Altura fija del "post-it" */
     margin: 10px;
-    /* Espacio entre los "post-it" */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +28,6 @@
     text-align: center;
     overflow-wrap: break-word;
     margin: 30px 20px 5px 20px;
-    /* Margen arriba, derecha, abajo, izquierda */
 }
 
 .note-description {
@@ -39,7 +35,6 @@
     overflow-wrap: break-word;
     flex-grow: 1;
     margin: 0 20px;
-    /* Margen izquierda y derecha */
 }
 
 .buttons-container {
@@ -47,7 +42,6 @@
     top: -1px;
     right: 15px;
     display: flex;
-    /* Alineamos los botones horizontalmente */
   }
   
   .edit-button,
@@ -56,15 +50,11 @@
     border: none;
     cursor: pointer;
     padding: 1px;
-    /* Ajustamos el tamaño de los botones */
   }
 
   
 
   .edit-button:hover,
 .delete-button:hover {
-  /* Estilos al pasar el ratón por encima del botón */
-  /* Cambiamos el color de fondo del botón */
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
-  /* Añadimos un sombreado al botón que ocupa solo el espacio del icono */
 }

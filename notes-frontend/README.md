@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# MyNotes Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
 
-## Available Scripts
+This is the frontend for the "Notes" application. Built with React, it provides a user interface to interact with the backend and manage your notes.
 
-In the project directory, you can run:
+## Environment configuration:
 
-### `npm start`
+Before running the frontend application, you need to configure the environment variables. These variables are essential for the application to run correctly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Copy the example configuration**:
+   Start by copying the provided `.env.example` file to a new file named `.env` in the root of your project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   cp .env.example .env
 
-### `npm test`
+2. **Edit the .env file**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open the .env file in your preferred text editor. You'll see default configurations like:
 
-### `npm run build`
+Adjust these values if necessary. For instance, if your backend API is hosted elsewhere, update the BACKEND_API_URL value.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Quick Start:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Install Dependencies**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+2. **Run the Application in Development Mode**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the development server and open the application in your default browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Build the Application for Production**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm run build
 
-## Learn More
+This will generate an optimized version of the application in the build folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+react: ^18.2.0
+react-dom: ^18.2.0
+react-router-dom: ^6.14.2
+react-icons: ^4.10.1
+@fortawesome/fontawesome-free: ^6.4.0
+@testing-library/jest-dom: ^5.17.0
+@testing-library/react: ^13.4.0
+@testing-library/user-event: ^13.5.0
+react-scripts: 5.0.1
+web-vitals: ^2.1.4
 
-### Code Splitting
+## Scripts:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start: Run the application in development mode.
+npm run build: Build the application for production.
+npm test: Run tests.
+npm run eject: If you need to configure something specific not exposed by create-react-app, you can "eject". However, be cautious with this command!
 
-### Analyzing the Bundle Size
+## Supported Browsers:
+Production:
+No dead browsers
+No Opera Mini
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Development:
+Latest Chrome version
+Latest Firefox version
+Latest Safari version
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is under the MIT license. Refer to the LICENSE file for more details.

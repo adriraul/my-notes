@@ -1,6 +1,6 @@
 // services/NoteService.js
 
-const BASE_URL = 'http://localhost:3000/api/notes';
+const BASE_URL = process.env.REACT_APP_BACKEND_API_URL;
 
 const NoteService = {
     createNote: async (noteData) => {
@@ -49,6 +49,7 @@ const NoteService = {
 
     getAllNotes: async () => {
         try {
+            console.log(BASE_URL);
             const response = await fetch(BASE_URL);
             const data = await response.json();
             return data;

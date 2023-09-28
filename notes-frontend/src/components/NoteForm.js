@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import NoteService from '../services/NoteService.js';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
-import leftImage from '../assets/basetis.png'
+import leftImage from '../assets/logo1.png'
 import './global.css';
 import './NoteForm.css';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -20,21 +20,17 @@ const NoteForm = () => {
         const fetchNoteById = async (noteId) => {
             try {
                 const noteResponse = await NoteService.getNoteById(noteId);
-                const note = noteResponse; // Acceder a la nota en la propiedad data
+                const note = noteResponse;
                 console.log(note)
                 console.log(noteResponse.data)
                 setName(note.name);
                 setDescription(note.description);
             } catch (error) {
                 console.error('Error al obtener la nota por ID:', error);
-                // Aquí puedes manejar el error, por ejemplo, redireccionando a otra pantalla
-                // navigate('/error-page');
             }
         };
 
         if (id) {
-            // Si hay un ID en los parámetros de la URL, significa que estamos en modo de edición
-            // Aquí cargamos los datos de la nota existente utilizando el ID
             fetchNoteById(id);
         }
     }, [id]);
@@ -49,17 +45,12 @@ const NoteForm = () => {
         try {
             if (id) {
                 console.log('intentamos hacer llamada al updatenote');
-                // Si hay un ID en los parámetros de la URL, significa que estamos en modo de edición
-                // Aquí actualizamos la nota existente utilizando el ID
                 await NoteService.updateNote(id, noteData);
             } else {
                 console.log('intentamos hacer llamada al createnote');
-                // Si no hay un ID en los parámetros de la URL, significa que estamos en modo de creación
-                // Aquí creamos una nueva nota
                 await NoteService.createNote(noteData);
             }
 
-            // Después de crear o actualizar la nota, redirigimos a la pantalla de lista de notas
             navigate('/note-list');
         } catch (error) {
             console.error('Error al guardar la nota:', error);

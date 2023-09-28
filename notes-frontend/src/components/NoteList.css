@@ -1,7 +1,7 @@
 .note-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Alinea los "post-it" al principio de la fila */
-    align-items: flex-start; /* Alinea los "post-it" en la parte superior del contenedor */
-    gap: 20px; /* Espacio entre los "post-it" */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
   }

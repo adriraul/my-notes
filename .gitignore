@@ -31,5 +31,6 @@ Thumbs.db
 
 # PostgreSQL
 *.sql
+!database/create-my-notes-database.sql
 *.backup
 *.dump

@@ -20,7 +20,7 @@ const NoteItem = ({ id, title, description, fetchAllNotes }) => {
             const confirmDelete = window.confirm(`¿Estás seguro de que quieres eliminar la nota "${title}"?`);
             if (confirmDelete) {
                 await NoteService.deleteNote(id);
-                fetchAllNotes(); // Actualizar la lista de notas en NoteList después de eliminar
+                fetchAllNotes();
             }
         } catch (error) {
             console.error('Error al eliminar la nota:', error);
@@ -32,11 +32,11 @@ const NoteItem = ({ id, title, description, fetchAllNotes }) => {
             <div className="buttons-container">
             <Link to={`/edit-note/${id}`}>
                 <button className="edit-button" >
-                    <BsPencilSquare size={15} onClick={handleEditNote}/> {/* Icono para editar */}
+                    <BsPencilSquare size={15} onClick={handleEditNote}/> {}
                 </button>
             </Link>
                 <button className="delete-button" onClick={handleDeleteNote}>
-                    <BsTrash size={15} /> {/* Icono para borrar */}
+                    <BsTrash size={15} /> {}
                 </button>
             </div>
             <div className="note-content">

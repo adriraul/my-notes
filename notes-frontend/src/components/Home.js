@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './global.css';
 import logo from '../assets/logo.jpg';
-import leftImage from '../assets/basetis.png'
+import leftImage from '../assets/logo1.png'
 
 const Home = () => {
     return (
         <div className="home-container">
             <header>
                 <Link to="/">
-                    <img src={leftImage} alt="Basetis Logo" className="left-image" />
+                    <img src={leftImage} alt="Logo" className="left-image" />
                 </Link>
 
                 <div className="header-title">

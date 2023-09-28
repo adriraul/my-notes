@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './global.css';
 import './NoteList.css';
 import logo from '../assets/logo.jpg';
-import leftImage from '../assets/basetis.png'
+import leftImage from '../assets/logo1.png'
 
 import { Link } from 'react-router-dom';
 import NoteItem from './NoteItem';
@@ -12,7 +12,6 @@ const NoteList = () => {
     const [notes, setNotes] = useState([]);
 
     useEffect(() => {
-        // Al montar el componente, obtenemos todas las notas
         fetchAllNotes();
     }, []);
 
@@ -24,12 +23,6 @@ const NoteList = () => {
             console.error('Error al obtener todas las notas:', error);
         }
     };
-
-    /*const notes = [
-        { id: 1, title: 'Nota 1', description: 'Descripción de la nota 1' },
-        { id: 2, title: 'Nota 2', description: 'Descripción de la nota 2' },
-        // ... otras notas
-      ];*/
 
     console.log(notes);
 
